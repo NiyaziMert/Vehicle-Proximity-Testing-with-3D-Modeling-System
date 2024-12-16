@@ -112,23 +112,24 @@ while cap.isOpened():
                 cv2.imwrite(ss_path, frame)
                 print(f"Ekran görüntüsü kaydedildi: {ss_path}")
 
-            # 3D Modelleme
-            if label in vehicle_classes:
-                sphere = create_sphere([center_x, center_y, center_z])
-                point_cloud_objects.append(sphere)
-            else:
-                cube = create_cube([center_x, center_y, center_z])
-                point_cloud_objects.append(cube)
+                # 3D Modelleme
+                if label in vehicle_classes:
+                    sphere = create_sphere([center_x, center_y, center_z])
+                    point_cloud_objects.append(sphere)
+                else:
+                    cube = create_cube([center_x, center_y, center_z])
+                    point_cloud_objects.append(cube)
+                if point_cloud_objects:
+                    print("3D Model Oluşturuluyor...")
+                    o3d.visualization.draw_geometries(point_cloud_objects)
+
 
             # Görüntü üzerinde kutu çiz
             color = (0, 255, 0) if label in vehicle_classes else (255, 0, 0)
             cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)
             cv2.putText(frame, f"{label} {real_distance:.2f}m", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, color, 2)
 
-    if point_cloud_objects:
-        print("3D Model Oluşturuluyor...")
-        o3d.visualization.draw_geometries(point_cloud_objects)
-
+    
     # Görüntü göster
     cv2_imshow(frame)
 
