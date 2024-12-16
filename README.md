@@ -1,4 +1,4 @@
-# ** Araç Yakınlık Tespiti ve 3D Modelleme Sistemi**
+# Araç Yakınlık Tespiti ve 3D Modelleme Sistemi
 
 ## **🔍 Projenin Vizyonu ve Amacı**
 Bu proje, eski model araçların yalnızca bir telefon kamerasını kullanarak kazaları önleyebileceği bir sistem sunmaktadır. Amacımız, **LIDAR kameralarının karmaşık donanım gereksinimlerini ortadan kaldırmak** ve standart bir telefon kamerasıyla aynı işi gerçekleştirmektir. 
