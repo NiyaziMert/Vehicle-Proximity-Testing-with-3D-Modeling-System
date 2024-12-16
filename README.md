@@ -131,5 +131,6 @@ Bu proje, **araçların (car, truck, bus) mesafesini gerçek zamanlı olarak izl
 2. **Daha Fazla Nesne Desteği**: İnsan, bisiklet, motosiklet gibi ek nesneler izlenebilir.
 3. **Mesafe Görselleştirmesi**: Görüntüde mesafeyi göstermek için renk kodlaması eklenebilir.
 
-##ÖNEMLİ NOT##
+## ÖNEMLİ NOT
+
 Bu kod, 3D modelleme içerdiğinden oldukça güçlü bir sistem gerektirmektedir. 
