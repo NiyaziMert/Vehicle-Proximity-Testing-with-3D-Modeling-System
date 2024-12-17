@@ -6,7 +6,6 @@ from PIL import Image
 from torchvision.transforms import Compose, Resize, ToTensor
 from ultralytics import YOLO
 import time
-from google.colab.patches import cv2_imshow
 from google.colab import files
 
 # YOLOv8 modelini yükle
@@ -131,7 +130,7 @@ while cap.isOpened():
 
     
     # Görüntü göster
-    cv2_imshow(frame)
+    cv2.imshow(frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):  # Çıkış için 'q'
         break
