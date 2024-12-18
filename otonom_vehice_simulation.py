@@ -112,7 +112,10 @@ while cap.isOpened():
                 if label in vehicle_classes:
                     sphere = create_sphere([center_x, center_y, center_z])
                     point_cloud_objects.append(sphere)
-
+                else:
+                  cube = create_cube([center_x, center_y, center_z])
+                  point_cloud_objects.append(cube)
+                    
                 if point_cloud_objects:
                     print("3D Model Oluşturuluyor...")
                     o3d.visualization.draw_geometries(point_cloud_objects)
