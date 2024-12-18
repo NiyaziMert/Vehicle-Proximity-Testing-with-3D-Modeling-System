@@ -7,6 +7,7 @@ Projenin odak noktası, araçların mesafesini **gerçek zamanlı olarak tespit 
 
 **print('ALARM') satırı, aslında sürücü için ani bir fren sinyalidir**. Bu uyarı, bir çarpışma olasılığı olduğunda sürücünün zamanında tepki verebilmesi için bir uyarı mekanizmasıdır.
 
+NOT: Derinlik algılama kalibrasyonu şu an verimli çalışmamaktadır.
 ---
 
 ## **🛠️ Kullanılan Teknolojiler ve Kütüphaneler**
@@ -127,9 +128,11 @@ Bu proje, **araçların (car, truck, bus) mesafesini gerçek zamanlı olarak izl
 ---
 
 ## **💡 Geliştirme Fikirleri**
-1. **Geliştirilmiş Kalibrasyon**: Daha doğru bir ölçek faktörü hesaplamak için birden fazla araçtan veri alınabilir.
-2. **Daha Fazla Nesne Desteği**: İnsan, bisiklet, motosiklet gibi ek nesneler izlenebilir.
-3. **Mesafe Görselleştirmesi**: Görüntüde mesafeyi göstermek için renk kodlaması eklenebilir.
+1. Derinlik kalibrasyonu şu an verimli çalışmamaktadır.
+2. **Geliştirilmiş Kalibrasyon**: Daha doğru bir ölçek faktörü hesaplamak için birden fazla araçtan veri alınabilir.
+3. **Daha Fazla Nesne Desteği**: İnsan, bisiklet, motosiklet gibi ek nesneler izlenebilir.
+4. Görselleştirme işlemi düşük görüntü kalitesinde verimli sonuç vermeyebilir.
+5. **Mesafe Görselleştirmesi**: Görüntüde mesafeyi göstermek için renk kodlaması eklenebilir.
 
 ## ÖNEMLİ NOT
 
